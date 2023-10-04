@@ -5,7 +5,10 @@ export interface item {
 }
 
 export default class ListItem implements item {
-    constructor (private _id: string, private _item: string, private _isChecked: boolean){}
+    constructor (
+        private _id: string = '', 
+        private _item: string = '', 
+        private _isChecked: boolean = false){}
 
     get id (){
         return this._id
